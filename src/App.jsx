@@ -23,8 +23,8 @@ function App() {
 
   return (
     <div ref={containerRef} className="mt-[40vh] mb-[50vh]">
-      <div className="flex items-center justify-center gap-3">
-        <h1 className="mb-10 text-6xl font-extrabold text-center">
+      <div className="flex items-center justify-center gap-1 lg:gap-3">
+        <h1 className="mb-10 text-3xl lg:text-6xl font-extrabold text-center">
           Cards Parallax effect
         </h1>
         <div className="rotate-45">

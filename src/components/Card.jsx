@@ -30,19 +30,21 @@ const Card = ({
       className={`h-screen w-full sticky top-0 flex items-center justify-center`}
     >
       <motion.div
-        className={`p-6 flex flex-col gap-6 mx-auto max-w-[60%] min-w-[500px] h-[400px] relative rounded-2xl`}
+        className={`p-6 flex flex-col gap-6 mx-auto max-w-[95%] lg:max-w-[60%] min-w-[100px] lg:min-w-[500px] h-[250px] lg:h-[400px] relative rounded-2xl`}
         style={{
           backgroundColor: color,
           scale: cardScale,
           top: `calc(-5% + ${index * 25}px`,
         }}
       >
-        <h2 className="w-full text-center text-2xl font-semibold">
+        <h2 className="w-full text-center text-lg lg:text-2xl font-semibold">
           {title || "-"}
         </h2>
-        <div className="h-full flex items-center justify-center gap-5">
+        <div className="text-sm lg:text-base h-full flex items-center justify-center gap-5">
           <div className="w-1/2 h-full">
-            <p className="mb-4">{description || "-"}</p>
+            <p className="mb-4 line-clamp-3 lg:line-clamp-5">
+              {description || "-"}
+            </p>
             <a className="text-blue-600 underline font-medium" href={link}>
               Read more
             </a>
